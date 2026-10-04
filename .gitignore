@@ -1,0 +1,66 @@
+# Medical data and generated results (including corrected mask copies)
+/data/
+/runs/
+/predictions/
+/outputs/
+/logs/
+*.nii
+*.nii.gz
+*.dcm
+*.dicom
+*.nrrd
+*.mha
+*.mhd
+*.raw
+
+# Model weights and training artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+/wandb/
+/mlruns/
+
+# Local Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+
+# Build products and generated distribution archives
+/build/
+/dist/
+*.egg-info/
+/femur_full_ubuntu.zip
+
+# Local credentials and machine settings
+.env
+.env.*
+!.env.example
+!.env.sample
+.aws/
+*.pem
+*.key
+
+# Editor history, local settings, and operating-system files
+.history/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+*.log
+*.tmp
