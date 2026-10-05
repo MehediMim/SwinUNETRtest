@@ -1,5 +1,5 @@
 # Medical data and generated results (including corrected mask copies)
-/data/
+
 /runs/
 /predictions/
 /outputs/
