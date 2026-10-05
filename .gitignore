@@ -13,6 +13,10 @@
 *.mhd
 *.raw
 
+# Include the test dataset in version control
+!/data/**/*.nii
+!/data/**/*.nii.gz
+
 # Model weights and training artifacts
 *.pt
 *.pth
