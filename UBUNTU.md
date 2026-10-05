@@ -64,6 +64,12 @@ Repeat smoke runs with a new output directory.
 
 This starts fresh, without smoke weights. It saves `best.pt`, `last.pt`,
 `history.csv`, `config.json`, and `split.json` under `runs/full`.
+After training completes, it automatically writes the configuration, patient
+split, best/final validation Dice, best epoch, and validation history to
+`research/experiments.md` in the project. Each output directory gets its own
+section; completing a resumed run updates that section. Interrupted runs and
+smoke tests do not create completed-run records. Commit this Markdown file to
+GitHub to preserve the results; training itself does not push to GitHub.
 Keep the terminal session alive, or run inside tmux. To resume an interrupted run:
 
 ```bash

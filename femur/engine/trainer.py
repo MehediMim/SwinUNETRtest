@@ -12,6 +12,7 @@ from femur.datasets.pairs import pairs
 from femur.model import make_model
 from femur.datasets.crops import CropDataset
 from femur.engine.validation import validate
+from femur.engine.experiment_log import record_completed_run
 
 
 def run_training(args):
@@ -87,3 +88,5 @@ def run_training(args):
             writer.writerow([epoch, float(np.mean(losses)), score])
             log.flush()
             print(f'Epoch {epoch}: loss={np.mean(losses):.5f}, val={score}', flush=True)
+    report = record_completed_run(out)
+    print(f'Completed experiment recorded in {report}', flush=True)
